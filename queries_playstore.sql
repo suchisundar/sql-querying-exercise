@@ -1,6 +1,6 @@
+\c playstore
 -- 1. Find the entire record for the app with an ID of `1880`.
-SELECT * FROM analytics 
-  WHERE id = 1880;
+SELECT * FROM analytics WHERE id = 1880;
 
 -- 2. Find the ID and app name for all apps that were last updated on August 01, 2018.
 SELECT id, app_name FROM analytics

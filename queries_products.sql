@@ -1,10 +1,9 @@
+\c products_db
+
 -- Add a product to the table with the name of "chair", 
 --  price of 44.00, and can_be_returned of false.
 
-INSERT INTO products
-  (name, price, can_be_returned)
-VALUES
-  ('chair', 44.00, 'f');
+INSERT INTO products (name, price, can_be_returned) VALUES ('chair', 44.00, 'f');
 
 -- Add a product to the table with the name of "stool", 
 --  price of 25.99, and can_be_returned of true.
@@ -65,7 +64,7 @@ DELETE FROM products WHERE price < 25;
 -- And now the sale is over. For the remaining products, increase their price by $20.
 
 UPDATE products SET price = price + 20;
-
+\! echo "Products that can be returned";
 -- There's been a change in company policy, and now all products are returnable
 
 UPDATE products SET can_be_returned = 't';
